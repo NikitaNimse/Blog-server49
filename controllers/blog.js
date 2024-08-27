@@ -17,7 +17,8 @@ const postblog = async(req,res)=>{
 
        try{
    
-        const savedblog =await Blog.save();
+        
+        const savedblog =await blog.save();
         res.json({
          success:true,
          message:"blog  successfully ",
